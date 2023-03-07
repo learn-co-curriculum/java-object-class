@@ -74,8 +74,7 @@ is linked with some integer value that we call a **hash code**. Hashing helps
 us create distinct identifiers for objects in Java.
 
 Java's `Object` class has a method called `hashCode()` which allows us to get
-a hashed value of the object. It should be noted that the `hashCode()` method
-**does not return the memory address of the object**. The hashed value that the
+a hashed value of the object. The hashed value that the
 `hashCode` method returns is an identifier for the object and can help us
 determine if two objects in Java are "equal".
 
