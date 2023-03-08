@@ -27,7 +27,7 @@ In this diagram, the following hierarchy is represented:
     4. `Student` extends `Person`, which extends `Object`.
     5. `Teacher` extends `Person`, which extends `Object`.
 
-_Note: Java's `Object` class is poorly named because an "object" is usually an
+Note: Java's `Object` class is poorly named because an "object" is usually an
 instance of a class. But the class that all classes ultimately and implicitly
 extend from is called `Object`. In this course, as in most technical content, we
 use the term "object" to refer to the instance of a class. We will make sure the
