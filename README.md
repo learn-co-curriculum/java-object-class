@@ -256,10 +256,12 @@ also handles the case of the parameter being `null` and immediately returns `fal
 ```java
 @Override
 public boolean equals(Object o) {
-    if (o == this)
+    if (o == this) {
         return true;
-    if (!(o instanceof Bicycle))
+    }
+    if (!(o instanceof Bicycle)) {
         return false;
+    }
     Bicycle other = (Bicycle)o;
     return (this.color == null && other.color == null)
           || (this.color != null && this.color.equals(other.color));
@@ -298,10 +300,12 @@ public class Bicycle {
 
    @Override
    public boolean equals(Object o) {
-      if (o == this)
+      if (o == this) {
          return true;
-      if (!(o instanceof Bicycle))
+      }
+      if (!(o instanceof Bicycle)) {
          return false;
+      }
       Bicycle other = (Bicycle)o;
       return (this.color == null && other.color == null)
               || (this.color != null && this.color.equals(other.color));
@@ -459,10 +463,12 @@ public class Bicycle {
 
    @Override
    public boolean equals(Object o) {
-      if (o == this)
+      if (o == this) {
          return true;
-      if (!(o instanceof Bicycle))
+      }
+      if (!(o instanceof Bicycle)) {
          return false;
+      }
       Bicycle other = (Bicycle)o;
       return (this.color == null && other.color == null)
               || (this.color != null && this.color.equals(other.color));
@@ -487,7 +493,6 @@ Now the program outputs:
 Bicycle red
 ```
 
-
 Finally, let's update `Person`  to override `equals()`, `hashCode()`, and `toString()`:
 Notice we use `.equals` to compare `String` object values, and `==` to compare `int`
 primitive values.
@@ -508,10 +513,12 @@ public class Person {
 
     @Override
     public boolean equals(Object o) {
-        if (o == this)
-            return true;
-        if (!(o instanceof Person))
-            return false;
+        if (o == this) {
+           return true;
+        }
+        if (!(o instanceof Person)) {
+           return false;
+        }
         Person other = (Person)o;
         return (this.name == null && other.name == null && this.age == other.age)
                 || (this.name != null && this.name.equals(other.name) &&  this.age == other.age);
