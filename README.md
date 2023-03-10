@@ -1,4 +1,4 @@
-# Java's Object Class
+# Object Class
 
 ## Learning Goals
 
